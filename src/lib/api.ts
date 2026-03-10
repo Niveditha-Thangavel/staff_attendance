@@ -16,6 +16,7 @@ async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const res = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
+      "ngrok-skip-browser-warning": "true",   // ← bypasses ngrok warning page
       ...options?.headers,
     },
     ...options,
