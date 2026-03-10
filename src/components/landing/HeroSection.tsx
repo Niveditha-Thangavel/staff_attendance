@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import demoVideo from "@/assets/dashboard-demo.mp4";
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
@@ -114,7 +114,7 @@ export default function HeroSection() {
                 playsInline
                 className="w-full h-full object-cover object-top"
               >
-                <source src="/dashboard-demo.mp4" type="video/mp4" />
+                <source src= {demoVideo} type="video/mp4" />
               </video>
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">
