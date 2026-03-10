@@ -17,7 +17,6 @@ export default function LandingPage() {
       <HeroSection />
       <ProblemSection />
       <SolutionSection />
-      <DashboardPreviewSection />
       <StaffExperienceSection />
       <AnalyticsSection />
       <AlertsAutomationSection />
