@@ -2,7 +2,7 @@
 // API Configuration & Client
 // ============================
 
-export const API_BASE_URL = "http://localhost:8000";
+export const API_BASE_URL = "https://stateless-hygroscopically-tristen.ngrok-free.dev";
 
 class ApiError extends Error {
   constructor(public status: number, message: string) {
